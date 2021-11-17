@@ -18,9 +18,9 @@ body {
   justify-content: center;
   background-color: white;
   width: 20rem;
-  margin-left: 1.5rem;
-  margin-top: 2.5rem;
   border-radius: 20px;
+  margin: auto;
+  margin-top: 2rem;
 }
 .illustration {
   border-top-left-radius: 20px;
@@ -67,7 +67,6 @@ span {
   text-decoration: underline;
   color: blue;
 }
-
 .btn {
   background-color: blue;
   color: white;
@@ -85,61 +84,50 @@ span {
   height: 3rem;
   color: rgb(128, 125, 125);
   font-weight: 700;
-  margin-bottom: rem;
 }
+/* This is the desk top view */
 
-@media (min-width: 575px) {
-  .container {
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-}
 @media (min-width: 768px) {
   .container {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-}
-@media (min-width: 880px) {
-  .container {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin: auto;
+    margin-top: 6rem;
+    width: 28rem;
   }
 }
 @media (min-width: 992px) {
   .container {
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-}
-@media (min-width: 1100px) {
-  .container {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin: auto;
+    margin-top: 6rem;
+    width: 28rem;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    margin-left: 400px;
-    margin-right: 400px;
-  }
-}
-
-@media (min-width: 1390px) {
-  .container {
-    margin-left: 450px;
-    margin-right: 450px;
+    margin: auto;
+    margin-top: 6rem;
+    width: 28rem;
   }
 }
 @media (min-width: 1400px) {
   .container {
-    margin-left: 500px;
-    margin-right: 500px;
+    margin: auto;
+    margin-top: 6rem;
+    width: 28rem;
   }
 }
-@media (min-width: 880px) {
+@media (min-width: 768px) {
   body {
     background-image: url(pattern-background-desktop.svg);
     background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
+  .change {
+    padding-left: 7rem;
+  }
+}
+@media (min-width: 768px) {
+  .plan {
+    padding-left: 2rem;
   }
 }
