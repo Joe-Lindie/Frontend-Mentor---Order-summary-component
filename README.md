@@ -1,1 +1,1 @@
-# Frontend-Mentor-Order Summary Component
+# Frontend-Mento: Order Summary Component
