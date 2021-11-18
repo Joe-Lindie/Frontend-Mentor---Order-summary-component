@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
 }
+::after,
+::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
 :root {
   --background-color: hsl(225, 100%, 94%);
 }
@@ -10,17 +18,20 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background-image: url(pattern-background-mobile.svg);
   background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 2rem;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: white;
-  width: 20rem;
+  max-width: 20rem;
   border-radius: 20px;
-  margin: auto;
-  margin-top: 2rem;
 }
 .illustration {
   border-top-left-radius: 20px;
@@ -91,28 +102,7 @@ span {
   .container {
     margin: auto;
     margin-top: 6rem;
-    width: 28rem;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    margin: auto;
-    margin-top: 6rem;
-    width: 28rem;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    margin: auto;
-    margin-top: 6rem;
-    width: 28rem;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    margin: auto;
-    margin-top: 6rem;
-    width: 28rem;
+    max-width: 28rem;
   }
 }
 @media (min-width: 768px) {
